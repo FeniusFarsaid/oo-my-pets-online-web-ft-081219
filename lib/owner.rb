@@ -75,7 +75,7 @@ def sell_pets
   end 
   # @@pets.each do |pet, arr|
   #     arr.clear
-   end 
+   #end 
 end 
 
  def list_pets
