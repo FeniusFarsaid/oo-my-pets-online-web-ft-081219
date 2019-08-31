@@ -73,8 +73,8 @@ def sell_pets
   Cat.all.each do |cat| 
     cat.owner = nil
   end 
-   @@pets.each do |pet, arr|
-      arr.clear
+  # @@pets.each do |pet, arr|
+  #     arr.clear
    end 
 end 
 
