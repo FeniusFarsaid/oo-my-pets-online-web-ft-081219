@@ -74,10 +74,12 @@ def sell_pets
    Cat.all.each do |cat| 
      cat.owner = nil
  end 
+   @@pets.each do |pet, arr|
+      arr.clear
 end 
 
  def list_pets
-   "I have #{Dog.all.size / 10} dog(s), and #{Cat.all.size / 10} cat(s)."
+   "I have #{Dog.all.size} dog(s), and #{Cat.all.size} cat(s)."
  end 
 
   
