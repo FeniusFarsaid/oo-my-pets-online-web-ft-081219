@@ -70,11 +70,10 @@ def sell_pets
   end 
   Dog.all.each do |dog| 
     dog.owner = nil
-end 
+  end 
   Cat.all.each do |cat| 
     cat.owner = nil
-end 
-   
+  end 
    @@pets.each do |pet, arr|
       arr.clear
    end 
