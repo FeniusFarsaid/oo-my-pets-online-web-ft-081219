@@ -62,18 +62,23 @@ end
 end   
 
 def sell_pets
-  Cat.all.each do |cat|
-    cat.mood = "nervous"
-  end
-  Dog.all.each do |dog| 
-    dog.mood = "nervous"
-  end 
-   Dog.all.each do |dog| 
-     dog.owner = nil
- end 
-   Cat.all.each do |cat| 
-     cat.owner = nil
- end 
+#   Cat.all.each do |cat|
+#     cat.mood = "nervous"
+#   end
+#   Dog.all.each do |dog| 
+#     dog.mood = "nervous"
+#   end 
+#   Dog.all.each do |dog| 
+#     dog.owner = nil
+# end 
+#   Cat.all.each do |cat| 
+#     cat.owner = nil
+# end 
+   pets = self.dogs + self.cats
+
+    pets.each do |pet|
+      pet.mood = "nervous"
+      pet.owner = nil
    @@pets.each do |pet, arr|
       arr.clear
    end 
