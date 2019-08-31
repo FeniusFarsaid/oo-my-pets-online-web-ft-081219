@@ -78,7 +78,6 @@ end
 
  def list_pets
    "I have #{Dog.all.size / 10} dog(s), and #{Cat.all.size / 10} cat(s)."
-   
  end 
 
   
